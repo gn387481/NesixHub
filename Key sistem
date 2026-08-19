@@ -244,3 +244,10 @@ UserInputService.InputChanged:Connect(function(input)
         Main.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
     end
 end)
+
+local ImageLabel = Instance.new("ImageLabel")
+ImageLabel.Size = UDim2.new(0, 200, 0, 200)
+ImageLabel.Position = UDim2.new(0.5, -100, 0, 50)
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.Image = "rbxassetid://106473518457733"
+ImageLabel.Parent = Main
